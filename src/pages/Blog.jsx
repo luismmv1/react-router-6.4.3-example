@@ -1,4 +1,4 @@
-import { useLoaderData, Link} from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 
 const Blog = () => {
 
@@ -6,17 +6,24 @@ const Blog = () => {
     console.log(posts);
     
     return (
-        <ul>
-            {posts.length > 0 ? (
-                posts.map((blog) => (
-                    <li key={blog.id}>
-                        <Link to={`/blog/${blog.id}`}>{blog.id} - {blog.title}</Link>
-                    </li>
-                ))
-            ) : (
-                <li>No blogs found</li>
-            )}
-        </ul>);
+        <>
+            <input
+                type="form-control-my-3"
+                type="text"
+            />
+            <ul className="list-group">
+                {posts.length > 0 ? (
+                    posts.map((blog) => (
+                        <li key={blog.id}>
+                            <Link to={`/blog/${blog.id}`}>{blog.id} - {blog.title}</Link>
+                        </li>
+                    ))
+                ) : (
+                    <li>No blogs found</li>
+                )}
+            </ul>
+        </>
+    );
 };
 export default Blog;
 
