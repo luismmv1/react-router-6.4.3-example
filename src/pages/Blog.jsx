@@ -7,10 +7,6 @@ const Blog = () => {
     
     return (
         <>
-            <input
-                className="form-control-my-3"
-                type="text"
-            />
             <ul className="list-group">
                 {posts.length > 0 ? (
                     posts.map((blog) => (
