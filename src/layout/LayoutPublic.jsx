@@ -1,5 +1,5 @@
 import { Outlet, useNavigation } from "react-router-dom";
-import Navbar from "../components/NavBar";
+import Navbar from "./components/Navbar.jsx";
 
 const LayoutPublic = () => {
     const navigation = useNavigation();
