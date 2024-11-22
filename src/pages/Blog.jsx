@@ -8,7 +8,7 @@ const Blog = () => {
     return (
         <>
             <input
-                type="form-control-my-3"
+                className="form-control-my-3"
                 type="text"
             />
             <ul className="list-group">
